@@ -1,9 +1,11 @@
 import React from 'react';
+import { DayPicker } from 'react-day-picker';
+import 'react-day-picker/dist/style.css';
 
 const Calendar = () => {
     return (
         <div>
-            <h1>this is calender</h1>
+            <DayPicker />;
         </div>
     );
 };
