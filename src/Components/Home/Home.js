@@ -5,7 +5,7 @@ import AddTask from './AddTask';
 
 const Home = () => {
     return (
-        <div>
+        <div className='mt-24 flex items-center flex-col'>
             <AddTask></AddTask>
             <ToDoTask></ToDoTask>
             <CompletedTasks></CompletedTasks>

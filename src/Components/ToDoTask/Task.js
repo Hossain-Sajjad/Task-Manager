@@ -6,7 +6,7 @@ const Task = ({ task }) => {
 
         const completedTask = task.task;
         const data = { completedTask }
-        fetch("http://localhost:5000/completedtask", {
+        fetch("https://infinite-beyond-42274.herokuapp.com/completedtask", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -19,7 +19,7 @@ const Task = ({ task }) => {
             })
 
 
-        fetch(`http://localhost:5000/task/${id}`, {
+        fetch(`https://infinite-beyond-42274.herokuapp.com/task/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
