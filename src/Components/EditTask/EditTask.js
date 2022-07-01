@@ -15,7 +15,7 @@ const EditTask = () => {
             }
             else {
                 const data = { task }
-                fetch(`https://infinite-beyond-42274.herokuapp.com/${id}`, {
+                fetch(`https://infinite-beyond-42274.herokuapp.com/task/${id}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'
