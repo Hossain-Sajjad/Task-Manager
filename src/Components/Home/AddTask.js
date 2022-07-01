@@ -12,7 +12,7 @@ const AddTask = () => {
             }
             else {
                 const data = { task }
-                fetch("https://infinite-beyond-42274.herokuapp.com//task", {
+                fetch("https://infinite-beyond-42274.herokuapp.com/task", {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import ToDoTask from './Components/ToDoTask/ToDoTask';
 import CompletedTasks from './Components/CompletedTasks/CompletedTasks';
 import Calendar from './Components/Calendar/Calendar';
+import EditTask from './Components/EditTask/EditTask';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/todo" element={<ToDoTask></ToDoTask>} />
         <Route path="/completed" element={<CompletedTasks></CompletedTasks>} />
         <Route path="/calender" element={<Calendar></Calendar>} />
+        <Route path="home/:id" element={<EditTask></EditTask>} />
       </Routes>
     </div>
   );

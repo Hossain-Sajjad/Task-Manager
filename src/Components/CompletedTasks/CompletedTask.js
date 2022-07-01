@@ -3,7 +3,7 @@ import React from 'react';
 const CompletedTask = ({ task }) => {
     console.log(task)
     return (
-        <li><strike>{task.completedTask}</strike></li>
+        <p><strike>{task.completedTask}</strike></p>
     );
 };
 

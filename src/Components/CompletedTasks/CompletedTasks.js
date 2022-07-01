@@ -7,19 +7,19 @@ const CompletedTasks = () => {
 
     const [completedTasks, setCompletedTasks] = useState([]);
     useEffect(() => {
-        fetch("https://infinite-beyond-42274.herokuapp.com//completedtask")
+        fetch("https://infinite-beyond-42274.herokuapp.com/completedtask")
             .then(res => res.json())
             .then(data => setCompletedTasks(data))
     }, [])
 
     return (
-        <div className='mt-12 mt-24 flex items-center flex-col'>
+        <div className='mt-12 flex items-center flex-col'>
             <div class="dropdown">
                 <label tabindex="0" class="btn m-1">
                     Completed task
                     <p className='ml-4'><AiOutlineCheck></AiOutlineCheck></p>
                 </label>
-                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <div tabindex="0" class="dropdown-content menu shadow bg-base-100 rounded-box">
                     {
                         completedTasks && completedTasks?.map(completedTask =>
                             <CompletedTask
@@ -28,7 +28,7 @@ const CompletedTasks = () => {
                             ></CompletedTask>
                         )
                     }
-                </ul>
+                </div>
             </div>
         </div>
     );
